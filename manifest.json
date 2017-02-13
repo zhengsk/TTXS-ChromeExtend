@@ -1,0 +1,27 @@
+{
+
+    "description": "天天向商编辑器",
+    "icons": {
+        "144": "icons/logo_144.png",
+        "192": "icons/logo_192.png",
+        "36": "icons/logo_36.png",
+        "48": "icons/logo_48.png",
+        "72": "icons/logo_72.png",
+        "96": "icons/logo_96.png"
+    },
+    "manifest_version": 2,
+    "name": "天天向商",
+    "browser_action": {
+        "default_icon": "icons/logo_144.png",
+        "default_popup": "popup.html",
+        "default_title": "天天向商"
+    },
+    "content_scripts": [
+        {
+            "matches": ["*://www.dancf.com/*"],
+            "js": ["js/hideImage.js"]
+        }
+    ],
+    "version": "0.0.1",
+    "author": "chengguan"
+}
